@@ -3,10 +3,7 @@ body {
 }
 
 .zone {
-    /* padding:30px 50px;
-    margin:40px 60px; */
     cursor: pointer;
-    /* display:inline-block; */
     color: #FFF;
     font-size: 2em;
     border-radius: 4px;
@@ -27,7 +24,7 @@ body {
 
 }
 
-/* nav */
+/*                     nav     ------------------------*/
 .main-nav {
     display: flex;
     list-style: none;
@@ -42,14 +39,6 @@ body {
 .main-nav li a {
     color: aliceblue;
     text-decoration: none;
-}
-/* mediquery */
-
-@media screen and (max-width: 600px){
-    .main-nav{
-        font-size: 0.5em;
-        padding: 0;
-    }
 }
 .push{
     margin-left: auto;
@@ -71,6 +60,23 @@ body {
     background: linear-gradient(top, #56B870 0%, #a5c956 100%);
     /* W3C */
 }
+/* mediquery */
+
+@media screen and (max-width: 600px){
+    .main-nav{
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+/* cover ------------------------------------------------------------------------ */
+/* center items */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
 
 .red {
     background: #C655BE;
