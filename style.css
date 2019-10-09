@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .zone {
@@ -17,7 +18,12 @@ body {
     -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
-
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
 .containter {
     display: grid;
 
@@ -32,6 +38,12 @@ body {
     margin: 0;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main-nav li {
     padding: 20px;
 }
@@ -40,9 +52,11 @@ body {
     color: aliceblue;
     text-decoration: none;
 }
-.push{
+
+.push {
     margin-left: auto;
 }
+
 .green {
 
     background: #56B870;
@@ -60,23 +74,28 @@ body {
     background: linear-gradient(top, #56B870 0%, #a5c956 100%);
     /* W3C */
 }
+
 /* mediquery */
 
-@media screen and (max-width: 600px){
-    .main-nav{
+@media screen and (max-width: 600px) {
+    .main-nav {
         font-size: 0.5em;
         padding: 0;
     }
 }
+
 /* cover ------------------------------------------------------------------------ */
 /* center items */
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 70vh;
 }
 
+.cover {
+    width: 20rem;
+}
 
 .red {
     background: #C655BE;
@@ -93,6 +112,29 @@ body {
     /* IE10+ */
     background: linear-gradient(top, #C655BE 0%, #cf0404 100%);
     /* W3C */
+}
+
+/* GRID ---------------------------------------------------------------------- */
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box>img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+
 }
 
 .yellow {
